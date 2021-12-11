@@ -10,17 +10,11 @@
       rel="stylesheet"
       href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css"
     />
-      <script>
-      tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
+    <style type="text/tailwindcss">
+      .active {
+        @apply bg-orange-500 ring-4;
       }
-    }
-    </script>
+    </style>
   </head>
   <body class="bg-gray-100">
     <div id="root"></div>
