@@ -6,6 +6,7 @@ import RandomQuotes from './pages/RandomQuotes'
 import DrumMachine from './pages/DrumMachine'
 import NotFound from './pages/NotFound'
 import Calculator from "./pages/Calculator";
+import Clock from "./pages/Clock";
 
 function App () {
   return (
@@ -15,6 +16,7 @@ function App () {
       <Route path="/markdown-previewer" element={<MarkdownPreviewer />} />
       <Route path="/drum-machine" element={<DrumMachine />} />
       <Route path="/calculator" element={<Calculator />} />
+      <Route path="/25-plus-5-clock" element={<Clock />} />
       <Route path="/*" element={<NotFound />} />
     </Routes>
   )

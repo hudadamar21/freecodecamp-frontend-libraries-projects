@@ -37,6 +37,9 @@ function Calculator () {
           setValue(0)
           setResult(0)
           break
+        case 'DEL':
+          setValue(curr => curr.toString().slice(0,-1))
+          break
         case 'x':
           setValue(curr => curr + '*')
           break
@@ -69,14 +72,14 @@ function Calculator () {
   }, [value])
 
   return (
-    <div className="calculator flex items-center justify-center h-screen">
+    <div className="calculator flex items-center justify-center h-screen bg-gray-500">
       <div className="grid grid-cols-4 w-80 bg-gray-700 border-8 border-gray-700 gap-1">
         <div  className="col-span-4 h-28 bg-black text-white p-3">
           <div id="display" className="text-right mb-2 text-lg tracking-widest overflow-auto">
-            {valueShow}
+            {valueShow || 0}
           </div>
           <div className="text-right text-4xl tracking-wider overflow-auto">
-            {result}
+            {result || 0}
           </div>
         </div>  
         {cals.map(cal => (

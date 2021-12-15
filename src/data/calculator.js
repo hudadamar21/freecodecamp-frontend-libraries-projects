@@ -1,6 +1,7 @@
 export default [
   // row one
-  {key: 'AC', id: 'clear', addClass: 'col-span-2 !bg-red-600 !aspect-auto'},
+  {key: 'AC', id: 'clear', addClass: ' !bg-red-700 !aspect-auto'},
+  {key: 'DEL', id: 'delete', addClass: ' !bg-red-800 !aspect-auto'},
   {key: '/', id: 'divide', addClass: 'bg-gray-600'},
   {key: 'x', id: 'multiply', addClass: 'bg-gray-600'},
 
